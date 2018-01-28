@@ -1,0 +1,24 @@
+{
+  "presets": [
+    "next/babel",
+    "env",
+    "stage-0"
+  ],
+  "env": {
+    "test": {
+      "plugins": ["istanbul"]
+    }
+  },
+  "plugins": [
+    ["module-resolver", {
+      "alias": {
+        "src": "./src",
+        "components": "./src/components",
+        "config":    "./src/config",
+        "helpers":    "./src/helpers",
+        "static":    "./src/static",
+        "utils":    "./src/utils"
+      }
+    }]
+  ]
+}
