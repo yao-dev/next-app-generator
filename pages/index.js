@@ -1,5 +1,5 @@
 import Layout from 'components/Layout/Layout';
-import Config from 'config';
+import Config from 'helpers/config';
 
 export default () => (
   <Layout title='Accueil'>
