@@ -1,4 +1,4 @@
-import Config    from 'helpers/config';
+import Config from 'helpers/config';
 import constants from 'config/constants';
 
 describe('Config', () => {

@@ -1,37 +1,61 @@
-## Welcome to GitHub Pages
+## Install
 
-You can use the [editor on GitHub](https://github.com/yao-dev/next-app-generator/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
-
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
-
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
+```
+git clone git@github.com:yao-dev/next-app-generator.git
+npm link
 ```
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+## Use cases
 
-### Jekyll Themes
+**Create new app**
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/yao-dev/next-app-generator/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+```
+yo next-app-generator new-app
+```
 
-### Support or Contact
+**Create new page**
 
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+```
+yo next-app-generator:page homepage
+```
+And go to http://localhost:3000/homepage
+
+**Create new component**
+
+```
+yo next-app-generator:component component-name
+```
+
+## Start app
+
+Enter in new-app project then run :
+
+**Dev mode**
+```
+npm run dev
+```
+
+**Prod mode**
+
+```
+npm run build
+npm run start
+```
+
+## Unit tests & coverage
+
+```
+npm test
+```
+
+**With coverage**
+```
+npm run test:coverage
+```
+And go to (path/of/your/system/new-app/coverage/lcov-report/index.html)
+
+## Deploy with now.sh
+
+```
+npm run deploy
+```
