@@ -1,8 +1,9 @@
 ## Install
 
 ```
-git clone git@github.com:yao-dev/next-app-generator.git
-npm link
+git clone git@github.com:yao-dev/next-app-generator.git next-app-generator
+cd next-app-generator && npm link
+cd ../
 ```
 
 ## Use cases
